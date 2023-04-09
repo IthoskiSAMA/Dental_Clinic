@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Clínica Médica del Pie</string>
+    <string name="default_web_client_idr" translatable="false">488314042527-7hsu21e3ir5s2td9ppmsemifar2de5j9.apps.googleusercontent.com</string>
+    <string name="tv_correo">Correo</string>
+    <string name="tv_clave">Contraseña</string>
+    <string name="msg_fallo_registro">Error registrando usuario</string>
+    <string name="msg_fallo_login">Error haciendo login</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--    Valores del Slideshow-->
+    <string name="menu_perfiles">Perfiles de los Usuarios</string>
+    <string name="menu_cita">Citas</string>
+    <string name="menu_expediente">Expedientes</string>
+    <string name="menu_servicio">Servicios</string>
+    <string name="menu_promocion">Promociones</string>
+    <string name="menu_contacto">Contacto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Globales-->
+    <string name="fail">Fallo actualizando</string>
+    <string name="seguro_borrar">"¿Está seguro de eliminar "</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="msg_padecimiento">Padecimiento</string>
+    <string name="msg_fecha">Fecha</string>
+    <string name="msg_hora">Hora</string>
+    <string name="msg_dia">Día</string>
+    <string name="msg_nombre_doctor">Nombre del Doctor</string>
+    <string name="msg_nombre_paciente">Nombre del paciente</string>
+
+    <!--    Servicio-->
+    <string name="msg_nombre_servicio">Nombre del Servicio</string>
+    <string name="msg_descripcion_servicio">Descripción del Servicio</string>
+    <string name="msg_costo">Costo del Servicio</string>
+    <string name="bt_agregar_servicio">Agregar nuevo servicio</string>
+    <string name="bt_actualizar_servicio">Actualizar servicio</string>
+    <string name="servicio_added">Servicio agregado</string>
+    <string name="no_data_servicio">Fallo agregando servicio. Faltan datos.</string>
+    <string name="servicio_updated">Servicio actualizado</string>
+    <string name="delete">Eliminar servicio</string>
+
+    <!--    Promoción-->
+    <string name="msg_nombre_promocion">Nombre de la Promoción</string>
+    <string name="msg_descripcion_promocion">Descripción de la Promoción</string>
+    <string name="msg_descuento">Descuento Aplicado</string>
+    <string name="bt_agregar_promocion">Agregar nueva promoción</string>
+    <string name="bt_actualizar_promocion">Actualizar promoción</string>
+    <string name="promocion_added">Promoción agregada</string>
+    <string name="no_data_promocion">Fallo agregando promoción. Faltan datos.</string>
+    <string name="promocion_updated">Promoción actualizada</string>
+    <string name="delete_promocion">Eliminar Promoción</string>
+
+    <!--    Contacto  -->
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_map_view">Ver lugar en mapa</string>
+    <string name="msg_saludos">Buenas!</string>
+    <string name="msg_mensaje_correo">¿Quería consultar si tenían disponibilidad para agendar una cita hoy a las 2:00 pm? Estoy presentando
+    un malestar en una de mis uñas y quería saber si ustedes me podían ayudar con eso? Gracias.</string>
+    <string name="msg_datos">Faltan datos</string>
+    <string name="error">Error</string>
+
+    <!--    Perfil  -->
+    <string name="msg_nombre_usuario">Nombre del Usuario</string>
+    <string name="msg_primer_apellido">Primer Apellido</string>
+    <string name="msg_segundo_apellido">Segundo Apellido</string>
+    <string name="msg_identificacion">Identificación</string>
+    <string name="msg_telefono">Teléfono</string>
+    <string name="msg_correo">Correo Electrónico</string>
+    <string name="msg_edad">Edad</string>
+    <string name="msg_genero">Género</string>
+    <string name="msg_direccion">Dirección</string>
+    <string name="msg_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="msg_peso">Peso</string>
+    <string name="msg_estatura">Estatura</string>
+    <string name="msg_fecha_cita">Fecha de cita</string>
+    <string name="msg_proxima_cita">Próxima cita</string>
+    <string name="msg_recordatorio">Recordatorio</string>
+    <string name="msg_historial_medico">Historial Médico</string>
+    <string name="bt_actualizar_perfil">Actualizar Perfil</string>
+    <string name="bt_add_perfil">Agregar Datos del Perfil</string>
+    <string name="perfil_updated">Perfil actualizado</string>
+    <string name="perfil_added">Datos del perfil agregados</string>
+    <string name="no_data_perfil">Fallo agregando datos al perfil. Faltan datos.</string>
+    <string name="bt_add_historial_medico">Agregar historial medico</string>
+    <string name="delete_perfil">Eliminar perfil</string>
+    <string name="seguro_borrar_perfil">"¿Está seguro de eliminar el pefil de "</string>
+
+    <!--    Cita  -->
+    <string name="cita_added">Datos de la cita agregados</string>
+    <string name="no_data_cita">Fallo agregando la cita. Faltan datos</string>
+    <string name="cita_updated">Cita actualizada</string>
+    <string name="delete_cita">Eliminar Cita</string>
+    <string name="seguro_borrar_cita">"¿Está seguro de eliminar la cita de "</string>
+    <string name="bt_add_cita">Agregar datos de la cita</string>
+    <string name="bt_actualizar_cita">Actualizar cita</string>
+
+    <!--    Expediente  -->
+    <string name="expediente_added">Datos del expediente agregados</string>
+    <string name="no_data_expediente">Fallo agregando el expediente. Faltan datos</string>
+    <string name="expediente_updated">Expediente actualizado</string>
+    <string name="delete_expediente">Eliminar Expediente</string>
+    <string name="seguro_borrar_expediente">"¿Está seguro de eliminar el expediente de "</string>
+    <string name="msg_medicamentos">Medicamentos</string>
+    <string name="msg_cuidados">Cuidados</string>
+    <string name="bt_add_expediente">Agregar datos al expediente</string>
+    <string name="bt_actualizar_expediente">Actualizar expediente</string>
+
+</resources>

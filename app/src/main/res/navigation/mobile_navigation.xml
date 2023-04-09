@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_perfil">
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.clinica_medica.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfiles"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_nav_perfil_to_addPerfilFragment"
+            app:destination="@id/addPerfilFragment" />
+        <action
+            android:id="@+id/action_nav_perfil_to_updatePerfilFragment"
+            app:destination="@id/updatePerfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cita"
+        android:name="com.clinica_medica.ui.cita.CitaFragment"
+        android:label="@string/menu_cita"
+        tools:layout="@layout/fragment_cita" >
+        <action
+            android:id="@+id/action_nav_cita_to_addCitaFragment"
+            app:destination="@id/addCitaFragment" />
+        <action
+            android:id="@+id/action_nav_cita_to_updateCitaFragment"
+            app:destination="@id/updateCitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_expediente"
+        android:name="com.clinica_medica.ui.expediente.ExpedienteFragment"
+        android:label="@string/menu_expediente"
+        tools:layout="@layout/fragment_expediente" >
+        <action
+            android:id="@+id/action_nav_expediente_to_addExpedienteFragment"
+            app:destination="@id/addExpedienteFragment" />
+        <action
+            android:id="@+id/action_nav_expediente_to_updateExpedienteFragment"
+            app:destination="@id/updateExpedienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_servicio"
+        android:name="com.clinica_medica.ui.servicio.ServicioFragment"
+        android:label="@string/menu_servicio"
+        tools:layout="@layout/fragment_servicio" >
+        <action
+            android:id="@+id/action_nav_servicio_to_addServicioFragment"
+            app:destination="@id/addServicioFragment" />
+        <action
+            android:id="@+id/action_nav_servicio_to_updateServicioFragment"
+            app:destination="@id/updateServicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_promocion"
+        android:name="com.clinica_medica.ui.promocion.PromocionFragment"
+        android:label="@string/menu_promocion"
+        tools:layout="@layout/fragment_promocion" >
+        <action
+            android:id="@+id/action_nav_promocion_to_addPromocionFragment"
+            app:destination="@id/addPromocionFragment" />
+        <action
+            android:id="@+id/action_nav_promocion_to_updatePromocionFragment"
+            app:destination="@id/updatePromocionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="com.clinica_medica.ui.contacto.ContactoFragment"
+        android:label="@string/menu_contacto"
+        tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/addServicioFragment"
+        android:name="com.clinica_medica.ui.servicio.AddServicioFragment"
+        android:label="@string/bt_agregar_servicio"
+        tools:layout="@layout/fragment_add_servicio" >
+        <action
+            android:id="@+id/action_addServicioFragment_to_nav_servicio"
+            app:destination="@id/nav_servicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPromocionFragment"
+        android:name="com.clinica_medica.ui.promocion.AddPromocionFragment"
+        android:label="@string/bt_agregar_promocion"
+        tools:layout="@layout/fragment_add_promocion" >
+        <action
+            android:id="@+id/action_addPromocionFragment_to_nav_promocion"
+            app:destination="@id/nav_promocion" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateServicioFragment"
+        android:name="com.clinica_medica.ui.servicio.UpdateServicioFragment"
+        android:label="@string/bt_actualizar_servicio"
+        tools:layout="@layout/fragment_update_servicio" >
+        <action
+            android:id="@+id/action_updateServicioFragment_to_nav_servicio"
+            app:destination="@id/nav_servicio" />
+        <argument
+            android:name="servicio"
+            app:argType="com.clinica_medica.model.Servicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePromocionFragment"
+        android:name="com.clinica_medica.ui.promocion.UpdatePromocionFragment"
+        android:label="@string/bt_actualizar_promocion"
+        tools:layout="@layout/fragment_update_promocion" >
+        <action
+            android:id="@+id/action_updatePromocionFragment_to_nav_promocion"
+            app:destination="@id/nav_promocion" />
+        <argument
+            android:name="promocion"
+            app:argType="com.clinica_medica.model.Promocion" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPerfilFragment"
+        android:name="com.clinica_medica.ui.perfil.AddPerfilFragment"
+        android:label="@string/bt_add_perfil"
+        tools:layout="@layout/fragment_add_perfil" >
+        <action
+            android:id="@+id/action_addPerfilFragment_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePerfilFragment"
+        android:name="com.clinica_medica.ui.perfil.UpdatePerfilFragment"
+        android:label="@string/bt_actualizar_perfil"
+        tools:layout="@layout/fragment_update_perfil" >
+        <action
+            android:id="@+id/action_updatePerfilFragment_to_nav_perfil"
+            app:destination="@id/nav_perfil" />
+        <argument
+            android:name="perfil"
+            app:argType="com.clinica_medica.model.Perfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCitaFragment"
+        android:name="com.clinica_medica.ui.cita.AddCitaFragment"
+        android:label="@string/bt_add_cita"
+        tools:layout="@layout/fragment_add_cita" >
+        <action
+            android:id="@+id/action_addCitaFragment_to_nav_cita"
+            app:destination="@id/nav_cita" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCitaFragment"
+        android:name="com.clinica_medica.ui.cita.UpdateCitaFragment"
+        android:label="@string/bt_actualizar_cita"
+        tools:layout="@layout/fragment_update_cita" >
+        <action
+            android:id="@+id/action_updateCitaFragment_to_nav_cita"
+            app:destination="@id/nav_cita" />
+        <argument
+            android:name="cita"
+            app:argType="com.clinica_medica.model.Cita" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExpedienteFragment"
+        android:name="com.clinica_medica.ui.expediente.AddExpedienteFragment"
+        android:label="@string/bt_add_expediente"
+        tools:layout="@layout/fragment_add_expediente" >
+        <action
+            android:id="@+id/action_addExpedienteFragment_to_nav_expediente"
+            app:destination="@id/nav_expediente" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateExpedienteFragment"
+        android:name="com.clinica_medica.ui.expediente.UpdateExpedienteFragment"
+        android:label="@string/bt_actualizar_expediente"
+        tools:layout="@layout/fragment_update_expediente" >
+        <action
+            android:id="@+id/action_updateExpedienteFragment_to_nav_expediente"
+            app:destination="@id/nav_expediente" />
+        <argument
+            android:name="expediente"
+            app:argType="com.clinica_medica.model.Expediente" />
+    </fragment>
+</navigation>
